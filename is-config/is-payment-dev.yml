@@ -1,0 +1,14 @@
+spring: 
+  redis: 
+    host: 118.89.146.110
+    port: 6379
+    password: Mm_1989321
+    database: 0
+    
+eureka: 
+  client: 
+    serviceUrl:
+      defaultZone: http://baopeizhou.xyz:2222/eureka/
+  
+
+    
