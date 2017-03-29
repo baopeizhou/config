@@ -56,5 +56,5 @@ org:
 eureka: 
   client:
     serviceUrl:
-      defaultZone: http://baopeizhou.xyz/registry/
+      defaultZone: http://baopeizhou.xyz:2222/eureka/
       
