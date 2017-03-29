@@ -1,0 +1,60 @@
+spring: 
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://118.89.146.110:3306/insurancestore
+    username: mysql
+    password: Mm_1989321
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    initialSize: 5  
+    minIdle: 5  
+    maxActive: 20  
+    maxWait: 60000  
+    timeBetweenEvictionRunsMillis: 60000  
+    minEvictableIdleTimeMillis: 300000  
+    validationQuery: SELECT 1 FROM DUAL  
+    testWhileIdle: true  
+    testOnBorrow: false  
+    testOnReturn: false  
+    poolPreparedStatements: true  
+    maxPoolPreparedStatementPerConnectionSize: 20  
+    filters: stat,wall,log4j  
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000      
+  redis: 
+    host: 118.89.146.110
+    port: 6379
+    password: Mm_1989321
+    database: 0
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html; charset=utf-8
+    cache: false
+org: 
+  quartz:
+    scheduler:
+      instanceName: myscheduler
+      instanceId: AUTO
+    threadPool: 
+      class: org.quartz.simpl.SimpleThreadPool
+      threadCount: 5
+      threadPriority: 5
+    jobStore: 
+      misfireThreshold: 60000
+      class: org.quartz.impl.jdbcjobstore.JobStoreTX
+      tablePrefix: QRTZ_
+      dataSource: myDS
+      isClustered: false
+      clusterCheckinInterval: 2000
+    dataSource: 
+      myDS: 
+        driver: com.mysql.cj.jdbc.Driver
+        URL: jdbc:mysql://118.89.146.110:3306/insurancestore
+        user: mysql
+        password: Mm_1989321
+        maxConnections: 10
+    
+eureka: 
+  client: 
+    serviceUrl:
+      defaultZone: http://baopeizhou.xyz:2222/eureka/
+    
