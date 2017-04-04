@@ -53,7 +53,7 @@ org:
     dataSource: 
       myDS: 
         driver: com.mysql.cj.jdbc.Driver
-        URL: jdbc:mysql://118.89.146.110:3306/insurancestore
+        URL: jdbc:mysql://118.89.146.110:3306/insurance_system
         user: mysql
         password: Mm_1989321
         maxConnections: 10
