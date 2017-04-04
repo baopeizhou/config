@@ -5,7 +5,7 @@ eureka:
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://118.89.146.110:3306/insurancestore
+    url: jdbc:mysql://118.89.146.110:3306/insurance_system
     username: mysql
     password: Mm_1989321
     driver-class-name: com.mysql.cj.jdbc.Driver
