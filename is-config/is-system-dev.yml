@@ -33,7 +33,7 @@ spring:
 eureka: 
   client:
     serviceUrl:
-      defaultZone: http://baopeizhou.xyz:2222/eureka/
+      defaultZone: http://baopeizhou.top:2222/eureka/
 org: 
   quartz:
     scheduler:
