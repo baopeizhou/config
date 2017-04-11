@@ -1,7 +1,7 @@
 spring: 
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://118.89.146.110:3306/insurancestore
+    url: jdbc:mysql://118.89.146.110:3306/insurance_goods
     username: mysql
     password: Mm_1989321
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -49,12 +49,12 @@ org:
     dataSource: 
       myDS: 
         driver: com.mysql.cj.jdbc.Driver
-        URL: jdbc:mysql://118.89.146.110:3306/insurancestore
+        URL: jdbc:mysql://118.89.146.110:3306/insurance_system
         user: mysql
         password: Mm_1989321
         maxConnections: 10
 eureka: 
   client:
     serviceUrl:
-      defaultZone: http://baopeizhou.xyz:2222/eureka/
+      defaultZone: http://baopeizhou.top:2222/eureka/
       
