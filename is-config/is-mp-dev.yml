@@ -24,11 +24,6 @@ spring:
     port: 6379
     password: Mm_1989321
     database: 0
-  thymeleaf:
-    mode: HTML5
-    encoding: UTF-8
-    content-type: text/html; charset=utf-8
-    cache: false
 org: 
   quartz:
     scheduler:
